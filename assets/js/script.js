@@ -36,6 +36,7 @@ window.onload = function(){
         },
         success: function(data){
             var values = data;
+            values = values.abc.first;
             var evenArray = [];
             values.forEach(function(item){
                 if(item % 2 == 0) {
